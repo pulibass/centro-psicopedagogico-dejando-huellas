@@ -1,0 +1,20 @@
+{
+  "name": "dejando-huellas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch src/scss/style.scss src/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pulibass/Dejando-Huellas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pulibass/Dejando-Huellas/issues"
+  },
+  "homepage": "https://github.com/pulibass/Dejando-Huellas#readme"
+}

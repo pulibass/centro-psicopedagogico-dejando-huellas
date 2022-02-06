@@ -1,0 +1,70 @@
+@import "./mixins";
+
+
+* {
+    @include format-document;
+}
+
+header {
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    display: flex;
+    background-color: #ffffff;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    border-radius: 0px 0px 5px 5px;
+    z-index: 999;
+    box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.544);
+
+    .container-header1 {
+        width: 100%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: row;
+
+        .logo {
+            width: 50%;
+            height: 100px;
+            margin: 0px auto;
+
+
+            img {
+                width: 110px;
+                height: 100px;
+                margin: 0px auto;
+                margin-left: 15px;
+
+            }
+        }
+
+        .logos {
+            width: 50%;
+            height: 100px;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: right;
+
+            li {
+                list-style: none;
+                margin: 15px;
+
+                a {
+
+                    i {
+                        color: rgb(12, 12, 12);
+                    }
+
+                    i:hover {
+                        color: rgb(70, 68, 68);
+                    }
+                }
+
+            }
+
+        }
+    }
+}

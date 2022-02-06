@@ -1,0 +1,22 @@
+@import "./variables";
+@import "./mixins";
+@import "./header";
+@import "./maininicio";
+@import "./iconwhatsapp";
+@import "./footer";
+
+
+
+* {
+    @include format-document;
+}
+
+body {
+    scroll-behavior: smooth;
+        background-image: url(/img/imagenes/fondo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    
+}
