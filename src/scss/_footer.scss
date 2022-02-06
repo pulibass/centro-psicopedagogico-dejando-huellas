@@ -60,3 +60,78 @@ footer {
         }
     }
 }
+@media screen and (max-width: 768px) {
+    footer{
+        h5 {
+            margin-top: 10px;
+            text-align: center;
+            color: #fcfcfc;
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        h5 {
+            margin-top: 10px;
+            text-align: center;
+            color: #fcfcfc;
+            font-size: 15px;
+        }
+    }
+    .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            margin: 5px;
+            color: #fcfcfc;
+            font-size: 10px;
+
+
+            i {
+                color: #fcfcfc;
+                font-size: 18px;
+
+            }
+        }
+    }
+
+    .info-footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: #fcfcfc;
+
+        h6 {
+            text-decoration: overline;
+            font-size: 15px;
+
+        }
+
+        span {
+            i {
+                color: #e6e6eb;
+                font-size: 20px;
+
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 350px) {
+    footer {
+        h5 {
+            margin-top: 10px;
+            text-align: center;
+            color: #fcfcfc;
+            font-size: 10px;
+        }
+    }
+}
