@@ -690,7 +690,7 @@ footer .info-footer span i {
 
 body {
   scroll-behavior: smooth;
-  background-image: url(../img/imagenes/fondo.jpg);
+  background-image: url(/src/img/imagenes/fondo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
