@@ -8,16 +8,14 @@
         max-width: 2000px;
         margin: auto;
         height: 100%;
-        background: #833ab4;
-        background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-        background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+        background: #833ab4a6;
+        background: -webkit-linear-gradient(to right, #fcb045af, #fd1d1d9e #833ab472);
+        background: linear-gradient(to right, #fcb04596, #fd1d1d8a, #833ab472);
+       
+
         padding: 15px;
 
         .row {
-            background: #833ab4;
-            background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-            background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-
             item {
                 img {
                     width: 280px;
@@ -83,15 +81,14 @@
         margin: 20px auto;
         display: flex;
         justify-content: space-between;
-        background: #833ab4;
-        background: -webkit-linear-gradient(to left, #fcb045, #fd1d1d, #833ab4);
-        background: linear-gradient(to left, #fcb045, #fd1d1d, #833ab4);
+      background: #833ab4a6;
+      background: -webkit-linear-gradient(to right, #fcb045af, #fd1d1d9e #833ab472);
+      background: linear-gradient(to right, #fcb04596, #fd1d1d8a, #833ab472);
         padding: 15px;
         border-radius: 5px;
-
         .ubicacion {
             width: 50%;
-            color: rgb(255, 255, 255);
+            color: rgb(49, 49, 49);
             margin: 5px;
             height: 300px;
 
@@ -123,7 +120,6 @@
     }
 
     .contenedor-formulario {
-        background: #fffdff;
         width: 100%;
         margin: auto;
         padding: 15px;
@@ -140,7 +136,7 @@
             flex-direction: column;
             flex-wrap: wrap;
             text-align: left;
-            background-color: rgba(245, 245, 245, 0.249);
+            background-color: #f5f5f5;
             font-family: sans-serif;
             text-transform: uppercase;
             box-shadow: 2px 5px 10px 5px $secondary-color-16;
@@ -234,6 +230,11 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+             background-image: url(../img/imagenes/fondo.jpg);
+             background-position: center;
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size: cover;
 
             h2 {
                 width: 60%;
