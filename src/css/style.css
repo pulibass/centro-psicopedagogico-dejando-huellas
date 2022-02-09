@@ -75,9 +75,9 @@ header .container-header1 .logos li a i:hover {
     margin: 0px auto;
   }
   header .container-header1 .logo img {
-    width: 120px;
-    height: 60px;
-    margin: 22px auto;
+    width: 200px;
+    height: 100px;
+    margin: 0px auto;
     margin-left: 15px;
   }
 }
@@ -94,10 +94,29 @@ header .container-header1 .logos li a i:hover {
     margin: 0px auto;
   }
   header .container-header1 .logo img {
-    width: 100px;
-    height: 50px;
-    margin: 22px auto;
-    margin-left: 15px;
+    width: 150px;
+    height: 75px;
+    margin: 10px auto;
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 300px) {
+  header .container-header1 {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+  }
+  header .container-header1 .logo {
+    width: 50%;
+    height: 100px;
+    margin: 0px auto;
+  }
+  header .container-header1 .logo img {
+    width: 120px;
+    height: 60px;
+    margin: 20px auto;
+    margin-left: 5px;
   }
 }
 .main-inicio {
@@ -505,6 +524,41 @@ header .container-header1 .logos li a i:hover {
     width: 100%;
   }
   .main-inicio .contenedor-formulario .info-formulario .linea-span {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .main-inicio .contenedor-formulario {
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .main-inicio .contenedor-formulario .form {
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 5px;
+    color: #141114;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    background-color: rgba(245, 245, 245, 0.249);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    box-shadow: 2px 5px 10px 5px #747575;
+  }
+  .main-inicio .contenedor-formulario .form form {
+    width: 100%;
+  }
+  .main-inicio .contenedor-formulario .form form .inputs-texts {
+    width: 100%;
+  }
+  .main-inicio .contenedor-formulario .form form .inputs-texts input {
     width: 100%;
   }
 }
