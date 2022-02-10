@@ -151,6 +151,8 @@ header .container-header1 .logos li a i:hover {
 }
 .main-inicio .contenedor .row {
   background-color: #ffffff;
+  width: 100%;
+  max-width: 2000px;
 }
 .main-inicio .contenedor .row item img {
   width: 280px;
