@@ -131,28 +131,23 @@ header .container-header1 .logos li a i:hover {
   max-width: 2000px;
   margin: auto;
   padding: 15px;
+  margin-top: 50px;
+  z-index: 1;
 }
 .main-inicio .contenedor .bg-color {
-  background-color: #5000ca;
   width: 100%;
   max-width: 2000px;
-  margin: auto;
-  height: 70%;
+  margin: 0px auto;
+  height: 500px;
+  max-height: 1000px;
   left: 0;
   right: 0;
   position: absolute;
-  top: 150px;
-}
-.main-inicio .contenedor .bg-color .wave {
-  width: 100%;
-  max-width: 2000px;
-  height: 100%;
-  position: absolute;
-  top: 300px;
   background-image: url(../img/imagenes/wave-4.svg);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top;
   background-size: cover;
+  z-index: 1;
 }
 .main-inicio .contenedor .row item img {
   width: 280px;
@@ -182,9 +177,9 @@ header .container-header1 .logos li a i:hover {
   justify-content: center;
   padding: 15px;
   width: 100%;
-  margin: 200px auto;
+  margin: 100px auto;
   background-color: #f5f5f5;
-  z-index: 3;
+  z-index: 10;
 }
 .main-inicio .contenedor-nosotras .licenciada {
   width: 50%;
@@ -196,13 +191,13 @@ header .container-header1 .logos li a i:hover {
 }
 .main-inicio .contenedor-nosotras .licenciada .foto {
   width: 100%;
-  height: 250px;
+  height: 300px;
   margin: auto;
   padding: 15px;
 }
 .main-inicio .contenedor-nosotras .licenciada .foto img {
   width: 200px;
-  height: 200px;
+  height: 220px;
   z-index: 2;
   border-radius: 100px;
 }
@@ -385,28 +380,6 @@ header .container-header1 .logos li a i:hover {
 }
 
 @media screen and (max-width: 1024px) {
-  .main-inicio .contenedor .bg-color {
-    background-color: #5000ca;
-    width: 100%;
-    max-width: 2000px;
-    margin: auto;
-    height: 60%;
-    left: 0;
-    right: 0;
-    position: absolute;
-    top: 150px;
-  }
-  .main-inicio .contenedor .bg-color .wave {
-    width: 100%;
-    max-width: 2000px;
-    height: 100%;
-    position: absolute;
-    top: 250px;
-    background-image: url(../img/imagenes/wave-4.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-  }
   .main-inicio .contenedor-nosotras {
     display: flex;
     flex-direction: row;
@@ -414,7 +387,7 @@ header .container-header1 .logos li a i:hover {
     justify-content: center;
     padding: 15px;
     width: 100%;
-    margin: 200px auto;
+    margin: 100px auto;
     z-index: 3;
   }
   .main-inicio .contenedor-data {
@@ -431,28 +404,6 @@ header .container-header1 .logos li a i:hover {
   .main-inicio {
     width: 100%;
   }
-  .main-inicio .contenedor .bg-color {
-    background-color: #5000ca;
-    width: 100%;
-    max-width: 2000px;
-    margin: auto;
-    height: 60%;
-    left: 0;
-    right: 0;
-    position: absolute;
-    top: 150px;
-  }
-  .main-inicio .contenedor .bg-color .wave {
-    width: 100%;
-    max-width: 2000px;
-    height: 110%;
-    position: absolute;
-    top: 250px;
-    background-image: url(../img/imagenes/wave-4.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-  }
   .main-inicio .contenedor-nosotras {
     display: flex;
     flex-direction: row;
@@ -460,7 +411,7 @@ header .container-header1 .logos li a i:hover {
     justify-content: center;
     padding: 5px;
     width: 100%;
-    margin: 150px auto;
+    margin: 100px auto;
   }
   .main-inicio .contenedor-nosotras .licenciada {
     width: 100%;
@@ -555,25 +506,16 @@ header .container-header1 .logos li a i:hover {
 }
 @media screen and (max-width: 500px) {
   .main-inicio .contenedor .bg-color {
-    background-color: #5000ca;
     width: 100%;
     max-width: 2000px;
-    margin: auto;
-    height: 6git 0%;
+    margin: 0px auto;
+    height: 50%;
     left: 0;
     right: 0;
     position: absolute;
-    top: 150px;
-  }
-  .main-inicio .contenedor .bg-color .wave {
-    width: 100%;
-    max-width: 2000px;
-    height: 100%;
-    position: absolute;
-    top: 270px;
     background-image: url(../img/imagenes/wave-4.svg);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
     background-size: cover;
   }
   .main-inicio .contenedor-data .wave2 .ubicacion {
