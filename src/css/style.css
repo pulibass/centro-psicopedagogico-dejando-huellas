@@ -149,6 +149,9 @@ header .container-header1 .logos li a i:hover {
   background-size: cover;
   z-index: 1;
 }
+.main-inicio .contenedor .row {
+  background-color: #fcf8f8;
+}
 .main-inicio .contenedor .row item img {
   width: 280px;
 }
@@ -178,7 +181,7 @@ header .container-header1 .logos li a i:hover {
   padding: 15px;
   width: 100%;
   margin: 100px auto;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   z-index: 10;
 }
 .main-inicio .contenedor-nosotras .licenciada {
@@ -429,7 +432,7 @@ header .container-header1 .logos li a i:hover {
   }
   .main-inicio .contenedor-nosotras .licenciada .foto img {
     width: 200px;
-    height: 200px;
+    height: 220px;
     z-index: 2;
     border-radius: 100px;
   }
