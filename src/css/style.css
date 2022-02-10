@@ -195,10 +195,15 @@ header .container-header1 .logos li a i:hover {
   border-radius: 5px;
 }
 .main-inicio .contenedor-nosotras .licenciada .foto {
+  width: 100%;
+  height: 250px;
+  margin: auto;
+  padding: 15px;
+}
+.main-inicio .contenedor-nosotras .licenciada .foto img {
   width: 200px;
   height: 200px;
-  background-color: black;
-  margin: auto;
+  z-index: 2;
   border-radius: 100px;
 }
 .main-inicio .contenedor-data {
@@ -466,10 +471,15 @@ header .container-header1 .logos li a i:hover {
     border-radius: 5px;
   }
   .main-inicio .contenedor-nosotras .licenciada .foto {
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    padding: 15px;
+  }
+  .main-inicio .contenedor-nosotras .licenciada .foto img {
     width: 200px;
     height: 200px;
-    background-color: black;
-    margin: auto;
+    z-index: 2;
     border-radius: 100px;
   }
   .main-inicio .contenedor-nosotras .licenciada .textos {
