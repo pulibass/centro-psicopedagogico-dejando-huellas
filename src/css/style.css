@@ -137,13 +137,13 @@ header .container-header1 .logos li a i:hover {
   width: 100%;
   max-width: 2000px;
   margin: auto;
-  height: 50%;
+  height: 30%;
   left: 0;
   right: 0;
   position: absolute;
   top: 150px;
 }
-.main-inicio .contenedor .wave {
+.main-inicio .contenedor .bg-color .wave {
   width: 100%;
   max-width: 2000px;
   height: 100%;
@@ -380,6 +380,28 @@ header .container-header1 .logos li a i:hover {
 }
 
 @media screen and (max-width: 1024px) {
+  .main-inicio .contenedor .bg-color {
+    background-color: #5000ca;
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    height: 25%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 150px;
+  }
+  .main-inicio .contenedor .bg-color .wave {
+    width: 100%;
+    max-width: 2000px;
+    height: 100%;
+    position: absolute;
+    top: 300px;
+    background-image: url(../img/imagenes/wave-4.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
   .main-inicio .contenedor-nosotras {
     display: flex;
     flex-direction: row;
@@ -403,6 +425,28 @@ header .container-header1 .logos li a i:hover {
 @media screen and (max-width: 768px) {
   .main-inicio {
     width: 100%;
+  }
+  .main-inicio .contenedor .bg-color {
+    background-color: #5000ca;
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    height: 25%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 150px;
+  }
+  .main-inicio .contenedor .bg-color .wave {
+    width: 100%;
+    max-width: 2000px;
+    height: 80%;
+    position: absolute;
+    top: 300px;
+    background-image: url(../img/imagenes/wave-4.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
   }
   .main-inicio .contenedor-nosotras {
     display: flex;
@@ -500,6 +544,28 @@ header .container-header1 .logos li a i:hover {
   }
 }
 @media screen and (max-width: 500px) {
+  .main-inicio .contenedor .bg-color {
+    background-color: #5000ca;
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    height: 25%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 150px;
+  }
+  .main-inicio .contenedor .bg-color .wave {
+    width: 100%;
+    max-width: 2000px;
+    height: 80%;
+    position: absolute;
+    top: 300px;
+    background-image: url(../img/imagenes/wave-4.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
   .main-inicio .contenedor-data .wave2 .ubicacion {
     display: flex;
     justify-content: center;

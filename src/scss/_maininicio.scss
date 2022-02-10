@@ -15,24 +15,25 @@
             width: 100%;
             max-width: 2000px;
             margin: auto;
-            height: 50%;
+            height: 30%;
             left: 0;
             right: 0;
             position: absolute;
             top: 150px;
+
+            .wave {
+                width: 100%;
+                max-width: 2000px;
+                height: 100%;
+                position: absolute;
+                top: 300px;
+                background-image: url(../img/imagenes/wave-4.svg);
+                background-repeat: no-repeat;
+                background-position: bottom;
+                background-size: cover;
+            }
         }
 
-        .wave {
-            width: 100%;
-            max-width: 2000px;
-            height: 100%;
-            position: absolute;
-            top: 300px;
-            background-image: url(../img/imagenes/wave-4.svg);
-            background-repeat: no-repeat;
-            background-position: bottom;
-            background-size: cover;
-        }
 
 
         .row {
@@ -306,6 +307,33 @@
 
 @media screen and (max-width: 1024px) {
     .main-inicio {
+        .contenedor {
+
+            .bg-color {
+                background-color: #5000ca;
+                width: 100%;
+                max-width: 2000px;
+                margin: auto;
+                height: 25%;
+                left: 0;
+                right: 0;
+                position: absolute;
+                top: 150px;
+
+                .wave {
+                    width: 100%;
+                    max-width: 2000px;
+                    height: 100%;
+                    position: absolute;
+                    top: 300px;
+                    background-image: url(../img/imagenes/wave-4.svg);
+                    background-repeat: no-repeat;
+                    background-position: bottom;
+                    background-size: cover;
+                }
+            }
+        }
+
 
         .contenedor-nosotras {
             display: flex;
@@ -338,6 +366,32 @@
     .main-inicio {
         width: 100%;
 
+           .contenedor {
+
+               .bg-color {
+                   background-color: #5000ca;
+                   width: 100%;
+                   max-width: 2000px;
+                   margin: auto;
+                   height: 25%;
+                   left: 0;
+                   right: 0;
+                   position: absolute;
+                   top: 150px;
+
+                   .wave {
+                       width: 100%;
+                       max-width: 2000px;
+                       height: 80%;
+                       position: absolute;
+                       top: 300px;
+                       background-image: url(../img/imagenes/wave-4.svg);
+                       background-repeat: no-repeat;
+                       background-position: bottom;
+                       background-size: cover;
+                   }
+               }
+           }
         .contenedor-nosotras {
             display: flex;
             flex-direction: row;
@@ -455,6 +509,32 @@
 
 @media screen and (max-width: 500px) {
     .main-inicio {
+           .contenedor {
+
+               .bg-color {
+                   background-color: #5000ca;
+                   width: 100%;
+                   max-width: 2000px;
+                   margin: auto;
+                   height: 25%;
+                   left: 0;
+                   right: 0;
+                   position: absolute;
+                   top: 150px;
+
+                   .wave {
+                       width: 100%;
+                       max-width: 2000px;
+                       height: 80%;
+                       position: absolute;
+                       top: 300px;
+                       background-image: url(../img/imagenes/wave-4.svg);
+                       background-repeat: no-repeat;
+                       background-position: bottom;
+                       background-size: cover;
+                   }
+               }
+           }
         .contenedor-data {
 
             .wave2 {
