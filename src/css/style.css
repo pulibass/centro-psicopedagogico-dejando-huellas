@@ -521,6 +521,15 @@ header .container-header1 .logos li a i:hover {
     background-position: top;
     background-size: cover;
   }
+  .main-inicio .contenedor-nosotras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    margin: 150px auto;
+  }
   .main-inicio .contenedor-data .wave2 .ubicacion {
     display: flex;
     justify-content: center;

@@ -482,6 +482,15 @@
             }
         }
     
+          .contenedor-nosotras {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: center;
+              padding: 5px;
+              width: 100%;
+              margin: 150px auto;
+          }
 
     .contenedor-data {
 
