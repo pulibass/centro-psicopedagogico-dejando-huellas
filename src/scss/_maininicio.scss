@@ -10,30 +10,14 @@
         padding: 15px;
         margin-top: 50px;
         z-index: 1;
-
-
-        .bg-color {
-            width: 100%;
-            max-width: 2000px;
-            height: 500px;
-            margin: auto;
-            max-height: 1000px;
-            left: 0;
-            right: 0;
-            position: absolute;
-            background-image: url(../img/imagenes/wave-4.svg);
-            background-repeat: no-repeat;
-            background-position: top;
-            background-size: cover;
-            z-index: 1;
-            background-color: #ffffff;
-
-        }
-
+        background-image: url(../img/imagenes/wave-4.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        background-color: #ffffff;
 
 
         .row {
-            background-color: #ffffff;
             width: 100%;
             margin: auto;
             max-width: 2000px;
@@ -81,14 +65,22 @@
         margin: 100px auto;
         background-color: #ffffff;
         z-index: 10;
+        background-image: url(../img/imagenes/fondo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
 
         .licenciada {
+            background-color: #ffffff;
             width: 50%;
             padding: 15px;
             margin: 15px;
             text-align: center;
             color: rgb(9, 8, 8);
             border-radius: 5px;
+            box-shadow: -1px 9px 35px 6px rgba(0, 0, 0, 0.75);
+
 
             .foto {
                 width: 100%;
@@ -471,22 +463,6 @@
 
 @media screen and (max-width: 500px) {
     .main-inicio {
-        .contenedor {
-
-            .bg-color {
-                width: 100%;
-                max-width: 2000px;
-                margin: 0px auto;
-                height: 50%;
-                left: 0;
-                right: 0;
-                position: absolute;
-                background-image: url(../img/imagenes/wave-4.svg);
-                background-repeat: no-repeat;
-                background-position: top;
-                background-size: cover;
-            }
-        }
 
         .contenedor-nosotras {
             display: flex;
