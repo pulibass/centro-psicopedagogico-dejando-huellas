@@ -1,7 +1,13 @@
+@import "./variables";
+@import "./mixins";
+
+* {
+    @include format-document;
+}
+
 .main-inicio {
     @include main;
     margin-top: 10px;
-    background-color: none;
 
     .contenedor {
         width: 100%;
@@ -15,6 +21,7 @@
         background-position: bottom;
         background-size: cover;
         background-color: #ffffff;
+
 
 
         .row {
@@ -63,7 +70,6 @@
         padding: 15px;
         width: 100%;
         margin: 100px auto;
-        background-color: #ffffff;
         z-index: 10;
         background-image: url(../img/imagenes/fondo.jpg);
         background-position: center;
@@ -166,7 +172,7 @@
         padding: 25px;
         display: flex;
         flex-direction: row;
-        background-color: none;
+
 
         .form {
             z-index: 3;
@@ -338,6 +344,11 @@
     .main-inicio {
         width: 100%;
 
+        .contenedor {
+            height: 450px;
+           
+        }
+
 
         .contenedor-nosotras {
             display: flex;
@@ -380,8 +391,10 @@
         .contenedor-data {
             background-size: cover;
             padding: 15px;
+            height: 800px;
 
             .wave2 {
+                margin-top: 15px;
                 display: flex;
                 flex-direction: column;
                 width: 100%;
@@ -397,20 +410,20 @@
                     flex-direction: column;
                     width: 100%;
                     margin: 5px auto;
-                    height: 300px;
+                    height: 500px;
 
                     .direccion,
                     .horario,
                     .colectivos {
 
                         h4 {
-                            margin-top: 15px;
-                            font-size: 15px;
+                            margin-top: 5px;
+                            font-size: 25px;
                         }
 
                         h2 {
-                            font-size: 25px;
-                            margin-top: 15px;
+                            font-size: 30px;
+                            margin-top: 5px;
                         }
                     }
                 }
@@ -437,14 +450,6 @@
                 margin-top: 25px;
                 border-radius: 5px;
                 padding: 15px;
-                color: #141114;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                text-align: left;
-                font-family: sans-serif;
-                text-transform: uppercase;
-                box-shadow: 2px 5px 10px 5px $secondary-color-16;
             }
 
             .info-formulario {
@@ -464,6 +469,10 @@
 @media screen and (max-width: 500px) {
     .main-inicio {
 
+        .contenedor {
+            height: 380px;
+        }
+
         .contenedor-nosotras {
             display: flex;
             flex-direction: row;
@@ -475,6 +484,7 @@
         }
 
         .contenedor-data {
+            margin-top: 20px;
 
             .wave2 {
 
@@ -485,8 +495,8 @@
                     text-align: center;
                     flex-direction: column;
                     width: 100%;
-                    margin: 150px auto;
-                    height: 100px;
+                    margin: 5px auto;
+                    height: 500px;
 
                     .direccion,
                     .horario,
@@ -532,14 +542,6 @@
                 margin-top: 25px;
                 border-radius: 5px;
                 padding: 15px;
-                color: #141114;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                text-align: left;
-                font-family: sans-serif;
-                text-transform: uppercase;
-                box-shadow: 2px 5px 10px 5px $secondary-color-16;
             }
 
             .info-formulario {
@@ -563,6 +565,11 @@
 @media screen and (max-width: 300px) {
     .main-inicio {
 
+        .contenedor {
+            height: 250px;
+        }
+
+
         .contenedor-formulario {
             width: 100%;
             margin: auto;
@@ -572,19 +579,9 @@
             align-items: center;
 
             .form {
-                width: 100%;
-                max-width: 1100px;
                 margin-top: 25px;
                 border-radius: 5px;
                 padding: 5px;
-                color: #141114;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                text-align: left;
-                font-family: sans-serif;
-                text-transform: uppercase;
-                box-shadow: 2px 5px 10px 5px $secondary-color-16;
 
                 form {
                     width: 100%;
