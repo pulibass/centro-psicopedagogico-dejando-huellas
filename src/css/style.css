@@ -123,7 +123,7 @@ header .container-header1 .logos li a i:hover {
   width: 100%;
   max-width: 2000px;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 10px;
   background-color: none;
 }
 .main-inicio .contenedor {
@@ -137,8 +137,8 @@ header .container-header1 .logos li a i:hover {
 .main-inicio .contenedor .bg-color {
   width: 100%;
   max-width: 2000px;
-  margin: 0px auto;
   height: 500px;
+  margin: auto;
   max-height: 1000px;
   left: 0;
   right: 0;
@@ -148,10 +148,12 @@ header .container-header1 .logos li a i:hover {
   background-position: top;
   background-size: cover;
   z-index: 1;
+  background-color: #ffffff;
 }
 .main-inicio .contenedor .row {
   background-color: #ffffff;
   width: 100%;
+  margin: auto;
   max-width: 2000px;
 }
 .main-inicio .contenedor .row item img {
@@ -167,6 +169,7 @@ header .container-header1 .logos li a i:hover {
   height: 100px;
   text-align: center;
   font-weight: bold;
+  background-color: #ffffff;
 }
 .main-inicio .contenedor .row .indicadores-div {
   height: 20px;

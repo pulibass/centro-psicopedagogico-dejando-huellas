@@ -1,6 +1,6 @@
 .main-inicio {
     @include main;
-    margin-top: 80px;
+    margin-top: 10px;
     background-color: none;
 
     .contenedor {
@@ -15,8 +15,8 @@
         .bg-color {
             width: 100%;
             max-width: 2000px;
-            margin: 0px auto;
             height: 500px;
+            margin: auto;
             max-height: 1000px;
             left: 0;
             right: 0;
@@ -26,6 +26,8 @@
             background-position: top;
             background-size: cover;
             z-index: 1;
+            background-color: #ffffff;
+
         }
 
 
@@ -33,6 +35,7 @@
         .row {
             background-color: #ffffff;
             width: 100%;
+            margin: auto;
             max-width: 2000px;
 
             item {
@@ -53,7 +56,7 @@
                 height: 100px;
                 text-align: center;
                 font-weight: bold;
-
+                background-color: #ffffff;
             }
 
             .indicadores-div {
