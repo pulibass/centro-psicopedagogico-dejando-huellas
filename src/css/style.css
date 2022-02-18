@@ -151,11 +151,9 @@ header .container-header1 .logos li a i:hover {
   padding: 15px;
   margin-top: 50px;
   z-index: 1;
-  background-image: url(../img/imagenes/wave-4.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  background-color: #ffffff;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
 }
 .main-inicio .contenedor .row {
   width: 100%;
@@ -191,29 +189,38 @@ header .container-header1 .logos li a i:hover {
   justify-content: center;
   padding: 15px;
   width: 100%;
-  margin: 100px auto;
+  margin: 0px auto;
+  background-color: #ffffff;
 }
 .main-inicio .contenedor-nosotras .licenciada {
-  background-color: #ffffff;
+  background-color: #fffffff8;
   width: 50%;
   padding: 15px;
   margin: 15px;
+  margin-top: 100px;
   text-align: center;
   color: #090808;
-  border-radius: 5px;
+  border-radius: 50px;
   box-shadow: -1px 9px 35px 6px rgba(0, 0, 0, 0.75);
 }
 .main-inicio .contenedor-nosotras .licenciada .foto {
-  width: 100%;
+  background-color: #ffffff;
+  width: 60%;
   height: 300px;
-  margin: auto;
+  margin: -120px auto;
   padding: 15px;
+  border-radius: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main-inicio .contenedor-nosotras .licenciada .foto img {
   width: 200px;
   height: 220px;
-  z-index: 2;
   border-radius: 100px;
+}
+.main-inicio .contenedor-nosotras .licenciada .textos {
+  margin-top: 90px;
 }
 .main-inicio .contenedor-data {
   width: 100%;
@@ -222,12 +229,10 @@ header .container-header1 .logos li a i:hover {
   display: flex;
   z-index: 1;
   justify-content: space-between;
-  background-color: #ffffff;
   border-radius: 5px;
-  background-image: url(../img/imagenes/wave-9.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   padding: 15px;
 }
 .main-inicio .contenedor-data .wave2 {
@@ -238,10 +243,11 @@ header .container-header1 .logos li a i:hover {
 .main-inicio .contenedor-data .wave2 .ubicacion {
   z-index: 3;
   width: 50%;
-  color: #313131;
+  color: white;
   margin: 5px;
   height: 300px;
   padding: 15px;
+  font-weight: bold;
 }
 .main-inicio .contenedor-data .wave2 .ubicacion .direccion h4,
 .main-inicio .contenedor-data .wave2 .ubicacion .horario h4,
@@ -268,11 +274,11 @@ header .container-header1 .logos li a i:hover {
 .main-inicio .contenedor-formulario {
   z-index: 1;
   width: 100%;
-  margin: 100px auto;
+  margin: 0px auto;
   padding: 25px;
   display: flex;
   flex-direction: row;
-  background-color: #ffffff00;
+  background-color: #ffffffce;
 }
 .main-inicio .contenedor-formulario .form {
   z-index: 3;
@@ -397,8 +403,15 @@ header .container-header1 .logos li a i:hover {
     justify-content: center;
     padding: 15px;
     width: 100%;
-    margin: 100px auto;
-    z-index: 3;
+    margin: 0px auto;
+  }
+  .main-inicio .contenedor-nosotras .licenciada {
+    width: 60%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+  .main-inicio .contenedor-nosotras .licenciada .foto {
+    width: 60%;
   }
   .main-inicio .contenedor-data {
     background-size: cover;
@@ -424,21 +437,13 @@ header .container-header1 .logos li a i:hover {
     justify-content: center;
     padding: 5px;
     width: 100%;
-    margin: 100px auto;
+    margin: 0px auto;
   }
   .main-inicio .contenedor-nosotras .licenciada {
-    width: 100%;
-    padding: 5px;
-    margin: 15px;
-    text-align: center;
-    color: #090808;
-    border-radius: 5px;
+    width: 70%;
   }
   .main-inicio .contenedor-nosotras .licenciada .foto {
-    width: 100%;
-    height: 250px;
-    margin: auto;
-    padding: 15px;
+    width: 70%;
   }
   .main-inicio .contenedor-nosotras .licenciada .foto img {
     width: 200px;
@@ -453,6 +458,7 @@ header .container-header1 .logos li a i:hover {
     background-size: cover;
     padding: 15px;
     height: 800px;
+    margin-top: 0px;
   }
   .main-inicio .contenedor-data .wave2 {
     margin-top: 15px;
@@ -511,9 +517,19 @@ header .container-header1 .logos li a i:hover {
     align-items: center;
   }
 }
+@media screen and (max-width: 599px) {
+  .main-inicio .contenedor {
+    height: 600px;
+  }
+}
 @media screen and (max-width: 500px) {
   .main-inicio .contenedor {
-    height: 380px;
+    width: 100%;
+    max-width: 2000px;
+    height: 550px;
+    margin: auto;
+    padding: 15px;
+    margin-top: 50px;
   }
   .main-inicio .contenedor-nosotras {
     display: flex;
@@ -522,10 +538,34 @@ header .container-header1 .logos li a i:hover {
     justify-content: center;
     padding: 5px;
     width: 100%;
-    margin: 150px auto;
+    margin: 0px auto;
+  }
+  .main-inicio .contenedor-nosotras .licenciada {
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 50px;
+  }
+  .main-inicio .contenedor-nosotras .licenciada .foto {
+    background-color: #ffffff;
+    width: 70%;
+    height: 300px;
+    margin: -140px auto;
+    padding: 15px;
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-inicio .contenedor-nosotras .licenciada .foto img {
+    width: 180px;
+    height: 210px;
+    border-radius: 100px;
+  }
+  .main-inicio .contenedor-nosotras .licenciada .textos {
+    margin-top: 100px;
   }
   .main-inicio .contenedor-data {
-    margin-top: 20px;
+    margin: 0px auto;
   }
   .main-inicio .contenedor-data .wave2 .ubicacion {
     display: flex;
@@ -582,9 +622,37 @@ header .container-header1 .logos li a i:hover {
     width: 100%;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   .main-inicio .contenedor {
-    height: 250px;
+    height: 450px;
+  }
+  .main-inicio .contenedor-nosotras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    margin: 0px auto;
+  }
+  .main-inicio .contenedor-nosotras .licenciada {
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 50px;
+  }
+  .main-inicio .contenedor-nosotras .licenciada .foto {
+    background-color: #ffffff;
+    width: 80%;
+    height: 300px;
+    margin: -140px auto;
+  }
+  .main-inicio .contenedor-nosotras .licenciada .foto img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+  }
+  .main-inicio .contenedor-nosotras .licenciada .textos {
+    margin-top: 100px;
   }
   .main-inicio .contenedor-formulario {
     width: 100%;
@@ -710,7 +778,11 @@ footer .redes li {
   margin: 5px;
   color: #fcfcfc;
 }
-footer .redes li i {
+footer .redes li a {
+  text-decoration: none;
+  color: #fcfcfc;
+}
+footer .redes li a i {
   color: #fcfcfc;
 }
 footer .info-footer {
