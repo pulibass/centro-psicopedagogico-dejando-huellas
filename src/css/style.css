@@ -132,10 +132,11 @@ header .container-header1 .logos li a i:hover {
   z-index: 3;
 }
 .main-inicio .foto-principal {
+  background-color: red;
   width: 100%;
   max-width: 2000px;
   margin: auto;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 1px 10px 1px;
   background-color: #ffffff;
 }
 .main-inicio .foto-principal img {
@@ -197,11 +198,13 @@ header .container-header1 .logos li a i:hover {
   max-width: 600px;
   padding: 15px;
   margin: 15px;
-  margin-top: 100px;
+  margin-top: 150px;
+  margin-bottom: 100px;
   text-align: center;
   color: #090808;
   border-radius: 50px;
   box-shadow: -1px 9px 35px 6px rgba(0, 0, 0, 0.75);
+  z-index: 1;
 }
 .main-inicio .contenedor-nosotras .licenciada .foto {
   background-color: #ffffff;
@@ -234,6 +237,7 @@ header .container-header1 .logos li a i:hover {
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   padding: 15px;
+  z-index: 4;
 }
 .main-inicio .contenedor-data .wave2 {
   display: flex;
@@ -261,7 +265,7 @@ header .container-header1 .logos li a i:hover {
   font-size: 25px;
 }
 .main-inicio .contenedor-data .wave2 .mapa {
-  z-index: 3;
+  z-index: 1;
   width: 50%;
   margin: 5px;
   height: 300px;
@@ -281,7 +285,7 @@ header .container-header1 .logos li a i:hover {
   background-color: #ffffffce;
 }
 .main-inicio .contenedor-formulario .form {
-  z-index: 3;
+  z-index: 1;
   width: 50%;
   max-width: 500px;
   border-radius: 5px;
