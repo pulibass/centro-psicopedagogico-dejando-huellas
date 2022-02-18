@@ -21,7 +21,7 @@
         max-width: 2000px;
         margin: auto;
         padding: 10px 0px 10px 0px;
-        background-color: #ffffff;
+        background-color: $primary-color;
 
         img {
             width: 100%;
@@ -56,7 +56,7 @@
 
                 h4 {
                     font-weight: bold;
-                    color: #141114;
+                    color: $primary-color-1;
                     font-size: 15px;
                     text-align: center;
                 }
@@ -67,7 +67,7 @@
                 height: 100px;
                 text-align: center;
                 font-weight: bold;
-                background-color: #ffffff;
+                background-color: $primary-color;
             }
 
             .indicadores-div {
@@ -75,7 +75,7 @@
                 top: 300px;
 
                 .indicadores {
-                    background-color: black;
+                    background-color: $primary-color-2;
                 }
             }
         }
@@ -86,17 +86,18 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: center;
+        justify-content: space-around;
         padding: 15px;
         width: 100%;
         margin: 0px auto;
-        background-color: #ffffff;
+        background-color: $primary-color;
 
 
 
         .licenciada {
-            background-color: #fffffff8;
-            width: 50%;
+            background-color: $primary-color;
+            width: 40%;
+            max-width: 600px;
             padding: 15px;
             margin: 15px;
             margin-top: 100px;
@@ -107,7 +108,7 @@
 
 
             .foto {
-                background-color: #ffffff;
+                background-color: $primary-color;
                 width: 60%;
                 height: 300px;
                 margin: -120px auto;
@@ -153,7 +154,7 @@
             .ubicacion {
                 z-index: 3;
                 width: 50%;
-                color: rgb(255, 255, 255);
+                color: $primary-color;
                 margin: 5px;
                 height: 300px;
                 padding: 15px;
@@ -197,7 +198,7 @@
         padding: 25px;
         display: flex;
         flex-direction: row;
-        background-color: #ffffffce;
+        background-color: $primary-color-7;
 
 
 
@@ -216,17 +217,17 @@
             background-color: hsl(0, 0%, 96%);
             font-family: sans-serif;
             text-transform: uppercase;
-            box-shadow: 2px 5px 10px 5px $secondary-color-16;
+            box-shadow: 2px 5px 10px 5px $primary-color-3;
 
             .inputs-texts {
                 margin: 20px 0px;
                 width: 100%;
                 font-family: sans-serif;
-                font-size: $font-size-4;
+                font-size: 15px;
                 font-weight: bold;
 
                 input {
-                    width: $width;
+                    width: 100%;
                     height: 30px;
                     border: hidden;
                 }
@@ -241,7 +242,7 @@
                 flex-direction: column;
                 margin: 20px 0px;
                 width: 100%;
-                font-size: $font-size-4;
+                font-size: 15px;
                 font-weight: bold;
 
                 select {
@@ -249,7 +250,7 @@
                     cursor: pointer;
                     border: hidden;
                     font-weight: bold;
-                    color: #585758;
+                    color: $primary-color-8;
                 }
             }
 
@@ -259,12 +260,12 @@
                 margin: 0px;
                 width: 100%;
                 font-family: sans-serif;
-                font-size: $font-size-4;
+                font-size: 15px;
                 font-weight: bold;
 
                 textarea {
                     height: 200px;
-                    width: $width;
+                    width: 100%;
                     border: hidden;
                 }
 
@@ -274,28 +275,28 @@
             }
 
             .button {
-                margin: $margin-1 auto;
+                margin: 5px auto;
                 display: flex;
                 width: 100%;
 
                 button {
-                    background-color: $secondary-color-8;
-                    border: $margin solid $secondary-color-8;
+                    background-color: $primary-color-4;
+                    border: 2px solid $primary-color-4;
                     text-align: center;
-                    font-size: $font-size-5;
-                    color: $secondary-color;
-                    padding: $padding-1;
+                    font-size: 20px;
+                    color: $primary-color-2;
+                    padding: 5px;
                     cursor: pointer;
-                    margin: $margin-1;
+                    margin: 5px;
                     border-radius: 5px;
                     width: 50%;
                 }
 
                 button:hover {
-                    background-color: $secondary-color-9;
-                    border: $margin solid $secondary-color-9;
+                    background-color: $primary-color-5;
+                    border: 2px solid $primary-color-5;
                     cursor: pointer;
-                    color: $secondary-color;
+                    color: $primary-color-2;
                 }
             }
         }
@@ -533,7 +534,6 @@
                 margin-bottom: 50px;
 
                 .foto {
-                    background-color: #ffffff;
                     width: 70%;
                     height: 300px;
                     margin: -140px auto;
@@ -659,7 +659,6 @@
                 margin-bottom: 50px;
 
                 .foto {
-                    background-color: #ffffff;
                     width: 80%;
                     height: 300px;
                     margin: -140px auto;

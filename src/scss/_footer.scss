@@ -19,7 +19,7 @@ footer {
     h5 {
         margin-top: 10px;
         text-align: center;
-        color: #fcfcfc;
+        color: $primary-color;
         font-size: 30px;
     }
 
@@ -32,18 +32,16 @@ footer {
         li {
             list-style: none;
             margin: 5px;
-            color: #fcfcfc;
+            color: $primary-color;
 
             a {
                 text-decoration: none;
-                color: #fcfcfc;
+                color: $primary-color;
 
                 i {
-                    color: #fcfcfc;
-
+                    color: $primary-color;
                 }
             }
-
         }
     }
 
@@ -52,7 +50,7 @@ footer {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        color: #fcfcfc;
+        color: $primary-color;
 
         h6 {
             text-decoration: overline;
@@ -60,7 +58,7 @@ footer {
 
         span {
             i {
-                color: #e6e6eb;
+                color: $primary-color;
             }
         }
     }
@@ -71,7 +69,7 @@ footer {
         h5 {
             margin-top: 10px;
             text-align: center;
-            color: #fcfcfc;
+            color: $primary-color;
             font-size: 20px;
         }
     }
@@ -82,7 +80,7 @@ footer {
         h5 {
             margin-top: 10px;
             text-align: center;
-            color: #fcfcfc;
+            color: $primary-color;
             font-size: 15px;
         }
     }
@@ -95,14 +93,12 @@ footer {
         li {
             list-style: none;
             margin: 5px;
-            color: #fcfcfc;
+            color: $primary-color;
             font-size: 10px;
 
-
             i {
-                color: #fcfcfc;
+                color: $primary-color;
                 font-size: 18px;
-
             }
         }
     }
@@ -112,19 +108,17 @@ footer {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        color: #fcfcfc;
+        color: $primary-color;
 
         h6 {
             text-decoration: overline;
             font-size: 15px;
-
         }
 
         span {
             i {
-                color: #e6e6eb;
+                color: $primary-color;
                 font-size: 20px;
-
             }
         }
     }
@@ -137,7 +131,7 @@ footer {
         h5 {
             margin-top: 10px;
             text-align: center;
-            color: #fcfcfc;
+            color: $primary-color;
             font-size: 10px;
         }
     }

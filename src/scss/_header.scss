@@ -10,7 +10,7 @@ header {
     max-width: 2000px;
     margin: auto;
     display: flex;
-    background-color: #ffffff;
+    background-color: $primary-color;
     height: 100px;
     position: sticky;
     top: 0;
@@ -55,11 +55,11 @@ header {
                 a {
 
                     i {
-                        color: rgb(12, 12, 12);
+                        color: $primary-color-2
                     }
 
                     i:hover {
-                        color: rgb(70, 68, 68);
+                        color: $primary-color-8;
                     }
                 }
 
