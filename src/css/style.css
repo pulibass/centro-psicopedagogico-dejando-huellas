@@ -144,12 +144,24 @@ header .container-header1 .logos li a i:hover {
   background-attachment: fixed;
   z-index: 3;
 }
+.main-inicio .foto-principal {
+  width: 100%;
+  max-width: 2000px;
+  margin: auto;
+  padding: 10px 0px 10px 0px;
+  background-color: #ffffff;
+}
+.main-inicio .foto-principal img {
+  width: 100%;
+  max-width: 2000px;
+  margin: auto;
+}
 .main-inicio .contenedor {
   width: 100%;
   max-width: 2000px;
   margin: auto;
   padding: 15px;
-  margin-top: 50px;
+  margin-top: 0px;
   z-index: 1;
   background: #0f0c29;
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
@@ -157,7 +169,7 @@ header .container-header1 .logos li a i:hover {
 }
 .main-inicio .contenedor .row {
   width: 100%;
-  margin: auto;
+  margin: 50px auto;
   max-width: 2000px;
 }
 .main-inicio .contenedor .row item img {
@@ -529,7 +541,7 @@ header .container-header1 .logos li a i:hover {
     height: 550px;
     margin: auto;
     padding: 15px;
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .main-inicio .contenedor-nosotras {
     display: flex;

@@ -15,12 +15,27 @@
     background-attachment: fixed;
     z-index: 3;
 
+
+    .foto-principal {
+        width: 100%;
+        max-width: 2000px;
+        margin: auto;
+        padding: 10px 0px 10px 0px;
+        background-color: #ffffff;
+
+        img {
+            width: 100%;
+            max-width: 2000px;
+            margin: auto;
+        }
+    }
+
     .contenedor {
         width: 100%;
         max-width: 2000px;
         margin: auto;
         padding: 15px;
-        margin-top: 50px;
+        margin-top: 0px;
         z-index: 1;
         background: #0f0c29;
         background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
@@ -31,7 +46,7 @@
 
         .row {
             width: 100%;
-            margin: auto;
+            margin: 50px auto;
             max-width: 2000px;
 
             item {
@@ -500,7 +515,7 @@
             height: 550px;
             margin: auto;
             padding: 15px;
-            margin-top: 50px;
+            margin-top: 0px;
         }
 
         .contenedor-nosotras {
