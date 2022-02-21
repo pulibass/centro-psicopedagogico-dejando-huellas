@@ -132,7 +132,6 @@ header .container-header1 .logos li a i:hover {
   z-index: 3;
 }
 .main-inicio .foto-principal {
-  background-color: red;
   width: 100%;
   max-width: 2000px;
   margin: auto;
@@ -202,28 +201,31 @@ header .container-header1 .logos li a i:hover {
   margin-bottom: 100px;
   text-align: center;
   color: #090808;
-  border-radius: 50px;
+  border-radius: 50px 10px 50px 10px;
   box-shadow: -1px 9px 35px 6px rgba(0, 0, 0, 0.75);
   z-index: 1;
 }
 .main-inicio .contenedor-nosotras .licenciada .foto {
   background-color: #ffffff;
   width: 60%;
-  height: 300px;
+  height: 250px;
   margin: -120px auto;
   padding: 15px;
-  border-radius: 150px;
+  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .main-inicio .contenedor-nosotras .licenciada .foto img {
-  width: 200px;
-  height: 220px;
-  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
 }
 .main-inicio .contenedor-nosotras .licenciada .textos {
-  margin-top: 90px;
+  margin-top: 120px;
+}
+.main-inicio .contenedor-nosotras .licenciada .textos h2 {
+  font-weight: bold;
 }
 .main-inicio .contenedor-data {
   width: 100%;
@@ -231,8 +233,8 @@ header .container-header1 .logos li a i:hover {
   margin: 0px auto;
   display: flex;
   z-index: 1;
-  justify-content: space-between;
   border-radius: 5px;
+  flex-direction: row;
   background: #0f0c29;
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
@@ -242,38 +244,72 @@ header .container-header1 .logos li a i:hover {
 .main-inicio .contenedor-data .wave2 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
+  justify-content: center;
+  padding: 5px;
 }
 .main-inicio .contenedor-data .wave2 .ubicacion {
   z-index: 3;
-  width: 50%;
+  width: 100%;
   color: #ffffff;
-  margin: 5px;
-  height: 300px;
+  margin: 5px auto;
   padding: 15px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.main-inicio .contenedor-data .wave2 .ubicacion .direccion,
+.main-inicio .contenedor-data .wave2 .ubicacion .colectivos {
+  width: 50%;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .main-inicio .contenedor-data .wave2 .ubicacion .direccion h4,
-.main-inicio .contenedor-data .wave2 .ubicacion .horario h4,
 .main-inicio .contenedor-data .wave2 .ubicacion .colectivos h4 {
+  width: 100%;
+  height: 50px;
   font-size: 15px;
-  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .main-inicio .contenedor-data .wave2 .ubicacion .direccion h2,
-.main-inicio .contenedor-data .wave2 .ubicacion .horario h2,
 .main-inicio .contenedor-data .wave2 .ubicacion .colectivos h2 {
+  width: 100%;
   font-size: 25px;
+  text-align: center;
+}
+.main-inicio .contenedor-data .wave2 .ubicacion .direccion h2 i,
+.main-inicio .contenedor-data .wave2 .ubicacion .colectivos h2 i {
+  color: aliceblue;
+  margin: 5px;
 }
 .main-inicio .contenedor-data .wave2 .mapa {
   z-index: 1;
-  width: 50%;
-  margin: 5px;
-  height: 300px;
-}
-.main-inicio .contenedor-data .wave2 .mapa iframe {
   width: 100%;
-  max-width: 700px;
-  height: 300px;
+  margin: 5px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.main-inicio .contenedor-data .wave2 .mapa button {
+  width: 20%;
+  height: 50px;
+  background-color: #070707;
+  border: hidden;
+  border-radius: 100px;
+}
+.main-inicio .contenedor-data .wave2 .mapa button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.main-inicio .contenedor-data .wave2 .mapa button:hover {
+  background-color: #585758;
 }
 .main-inicio .contenedor-formulario {
   z-index: 1;
@@ -287,7 +323,7 @@ header .container-header1 .logos li a i:hover {
 .main-inicio .contenedor-formulario .form {
   z-index: 1;
   width: 50%;
-  max-width: 500px;
+  max-width: 800px;
   border-radius: 5px;
   padding: 15px;
   color: #141114;
@@ -300,37 +336,44 @@ header .container-header1 .logos li a i:hover {
   text-transform: uppercase;
   box-shadow: 2px 5px 10px 5px #747575;
 }
-.main-inicio .contenedor-formulario .form .inputs-texts {
+.main-inicio .contenedor-formulario .form form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main-inicio .contenedor-formulario .form form .inputs-texts {
   margin: 20px 0px;
-  width: 100%;
+  width: 50%;
   font-family: sans-serif;
   font-size: 15px;
   font-weight: bold;
 }
-.main-inicio .contenedor-formulario .form .inputs-texts input {
-  width: 100%;
+.main-inicio .contenedor-formulario .form form .inputs-texts input {
+  width: 90%;
   height: 30px;
   border: hidden;
 }
-.main-inicio .contenedor-formulario .form .inputs-texts input::placeholder {
+.main-inicio .contenedor-formulario .form form .inputs-texts input::placeholder {
   font-weight: bold;
 }
-.main-inicio .contenedor-formulario .form .inputs-select-radio {
+.main-inicio .contenedor-formulario .form form .inputs-select-radio {
   display: flex;
   flex-direction: column;
   margin: 20px 0px;
-  width: 100%;
+  width: 50%;
   font-size: 15px;
   font-weight: bold;
 }
-.main-inicio .contenedor-formulario .form .inputs-select-radio select {
+.main-inicio .contenedor-formulario .form form .inputs-select-radio select {
+  width: 100%;
   height: 30px;
   cursor: pointer;
   border: hidden;
   font-weight: bold;
   color: #585758;
 }
-.main-inicio .contenedor-formulario .form .comentario {
+.main-inicio .contenedor-formulario .form form .comentario {
   display: flex;
   flex-direction: column;
   margin: 0px;
@@ -339,39 +382,39 @@ header .container-header1 .logos li a i:hover {
   font-size: 15px;
   font-weight: bold;
 }
-.main-inicio .contenedor-formulario .form .comentario textarea {
+.main-inicio .contenedor-formulario .form form .comentario textarea {
   height: 200px;
   width: 100%;
   border: hidden;
 }
-.main-inicio .contenedor-formulario .form .comentario textarea::placeholder {
+.main-inicio .contenedor-formulario .form form .comentario textarea::placeholder {
   font-weight: bold;
 }
-.main-inicio .contenedor-formulario .form .button {
+.main-inicio .contenedor-formulario .form form .button {
   margin: 5px auto;
   display: flex;
   width: 100%;
 }
-.main-inicio .contenedor-formulario .form .button button {
+.main-inicio .contenedor-formulario .form form .button button {
   background-color: #018bb9;
   border: 2px solid #018bb9;
   text-align: center;
   font-size: 20px;
-  color: #070707;
+  color: #ffffff;
   padding: 5px;
   cursor: pointer;
   margin: 5px;
   border-radius: 5px;
   width: 50%;
 }
-.main-inicio .contenedor-formulario .form .button button:hover {
+.main-inicio .contenedor-formulario .form form .button button:hover {
   background-color: #004e92;
   border: 2px solid #004e92;
   cursor: pointer;
-  color: #070707;
+  color: #ffffff;
 }
 .main-inicio .contenedor-formulario .info-formulario {
-  width: 90%;
+  width: 50%;
   max-width: 1300px;
   display: flex;
   flex-direction: column;
@@ -384,6 +427,10 @@ header .container-header1 .logos li a i:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.main-inicio .contenedor-formulario .info-formulario h2 span {
+  width: 100%;
 }
 .main-inicio .contenedor-formulario .info-formulario .linea-span {
   width: 60%;
@@ -444,59 +491,28 @@ header .container-header1 .logos li a i:hover {
     margin: 0px auto;
   }
   .main-inicio .contenedor-nosotras .licenciada {
-    width: 70%;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 100px;
+    margin-bottom: 50px;
   }
   .main-inicio .contenedor-nosotras .licenciada .foto {
     width: 70%;
-  }
-  .main-inicio .contenedor-nosotras .licenciada .foto img {
-    width: 200px;
-    height: 220px;
-    z-index: 2;
-    border-radius: 100px;
-  }
-  .main-inicio .contenedor-nosotras .licenciada .textos {
-    width: 100%;
-  }
-  .main-inicio .contenedor-data {
-    background-size: cover;
+    max-width: 250px;
+    margin: -100px auto;
     padding: 15px;
-    height: 800px;
-    margin-top: 0px;
-  }
-  .main-inicio .contenedor-data .wave2 {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-  }
-  .main-inicio .contenedor-data .wave2 .ubicacion {
+    border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    flex-direction: column;
+  }
+  .main-inicio .contenedor-nosotras .licenciada .foto img {
     width: 100%;
-    margin: 5px auto;
-    height: 500px;
+    height: 100%;
+    border-radius: 100%;
   }
-  .main-inicio .contenedor-data .wave2 .ubicacion .direccion h4,
-.main-inicio .contenedor-data .wave2 .ubicacion .horario h4,
-.main-inicio .contenedor-data .wave2 .ubicacion .colectivos h4 {
-    margin-top: 5px;
-    font-size: 25px;
-  }
-  .main-inicio .contenedor-data .wave2 .ubicacion .direccion h2,
-.main-inicio .contenedor-data .wave2 .ubicacion .horario h2,
-.main-inicio .contenedor-data .wave2 .ubicacion .colectivos h2 {
-    font-size: 30px;
-    margin-top: 5px;
-  }
-  .main-inicio .contenedor-data .wave2 .mapa {
-    width: 80%;
-    margin: 35px auto;
-    height: 300px;
+  .main-inicio .contenedor-nosotras .licenciada .textos {
+    width: 100%;
   }
   .main-inicio .contenedor-formulario {
     width: 100%;
@@ -507,10 +523,33 @@ header .container-header1 .logos li a i:hover {
     align-items: center;
   }
   .main-inicio .contenedor-formulario .form {
-    width: 60%;
+    width: 100%;
     margin-top: 25px;
     border-radius: 5px;
     padding: 15px;
+  }
+  .main-inicio .contenedor-formulario .form form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .main-inicio .contenedor-formulario .form form .button {
+    margin: 5px auto;
+    display: flex;
+    width: 100%;
+  }
+  .main-inicio .contenedor-formulario .form form .button button {
+    background-color: #018bb9;
+    border: 2px solid #018bb9;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    width: 50%;
   }
   .main-inicio .contenedor-formulario .info-formulario {
     width: 100%;
@@ -518,12 +557,113 @@ header .container-header1 .logos li a i:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .main-inicio .contenedor-formulario .info-formulario h2 {
+    width: 80%;
+    display: flex;
+    justify-content: left;
     align-items: center;
+    flex-direction: column;
+    text-align: left;
+  }
+  .main-inicio .contenedor-formulario .info-formulario h2 span {
+    width: 100%;
+  }
+  .main-inicio .contenedor-formulario .info-formulario .linea-span {
+    width: 80%;
   }
 }
 @media screen and (max-width: 599px) {
   .main-inicio .contenedor {
     height: 600px;
+  }
+  .main-inicio .contenedor-data {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 5px;
+    flex-direction: row;
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    padding: 15px;
+    z-index: 4;
+  }
+  .main-inicio .contenedor-data .wave2 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+  }
+  .main-inicio .contenedor-data .wave2 .ubicacion {
+    z-index: 3;
+    width: 100%;
+    color: #ffffff;
+    margin: auto;
+    padding: 15px;
+    font-weight: bold;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .main-inicio .contenedor-data .wave2 .ubicacion .direccion,
+.main-inicio .contenedor-data .wave2 .ubicacion .colectivos {
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-inicio .contenedor-data .wave2 .ubicacion .direccion h4,
+.main-inicio .contenedor-data .wave2 .ubicacion .colectivos h4 {
+    width: 100%;
+    height: 50px;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .main-inicio .contenedor-data .wave2 .ubicacion .direccion h2,
+.main-inicio .contenedor-data .wave2 .ubicacion .colectivos h2 {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
+  .main-inicio .contenedor-data .wave2 .ubicacion .direccion h2 i,
+.main-inicio .contenedor-data .wave2 .ubicacion .colectivos h2 i {
+    color: aliceblue;
+    margin: 5px;
+  }
+  .main-inicio .contenedor-data .wave2 .mapa {
+    z-index: 1;
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .main-inicio .contenedor-data .wave2 .mapa button {
+    width: 50%;
+    height: 50px;
+    background-color: #070707;
+    border: hidden;
+    border-radius: 100px;
+  }
+  .main-inicio .contenedor-data .wave2 .mapa button a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .main-inicio .contenedor-data .wave2 .mapa button:hover {
+    background-color: #585758;
   }
 }
 @media screen and (max-width: 500px) {
@@ -545,61 +685,31 @@ header .container-header1 .logos li a i:hover {
     margin: 0px auto;
   }
   .main-inicio .contenedor-nosotras .licenciada {
-    width: 80%;
-    margin-top: 200px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 100px;
     margin-bottom: 50px;
   }
   .main-inicio .contenedor-nosotras .licenciada .foto {
-    width: 70%;
-    height: 300px;
-    margin: -140px auto;
+    width: 50%;
+    max-width: 300px;
+    height: 200px;
+    margin: -100px auto;
     padding: 15px;
-    border-radius: 150px;
+    border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .main-inicio .contenedor-nosotras .licenciada .foto img {
-    width: 180px;
-    height: 210px;
-    border-radius: 100px;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 300px;
+    border-radius: 100%;
   }
   .main-inicio .contenedor-nosotras .licenciada .textos {
-    margin-top: 100px;
-  }
-  .main-inicio .contenedor-data {
-    margin: 0px auto;
-  }
-  .main-inicio .contenedor-data .wave2 .ubicacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    width: 100%;
-    margin: 5px auto;
-    height: 500px;
-  }
-  .main-inicio .contenedor-data .wave2 .ubicacion .direccion h4,
-.main-inicio .contenedor-data .wave2 .ubicacion .horario h4,
-.main-inicio .contenedor-data .wave2 .ubicacion .colectivos h4 {
-    margin-top: 15px;
-    font-size: 15px;
-  }
-  .main-inicio .contenedor-data .wave2 .ubicacion .direccion h2,
-.main-inicio .contenedor-data .wave2 .ubicacion .horario h2,
-.main-inicio .contenedor-data .wave2 .ubicacion .colectivos h2 {
-    font-size: 25px;
-    margin-top: 15px;
-  }
-  .main-inicio .contenedor-data .wave2 .mapa {
-    width: 100%;
-    margin: 35px auto;
-    height: 300px;
-  }
-  .main-inicio .contenedor-data .wave2 .mapa iframe {
-    width: 100%;
-    height: 300px;
+    margin-top: 95px;
   }
   .main-inicio .contenedor-formulario {
     width: 100%;
@@ -614,6 +724,57 @@ header .container-header1 .logos li a i:hover {
     margin-top: 25px;
     border-radius: 5px;
     padding: 15px;
+  }
+  .main-inicio .contenedor-formulario .form form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .main-inicio .contenedor-formulario .form form .inputs-texts {
+    margin: 20px 0px;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .main-inicio .contenedor-formulario .form form .inputs-texts input {
+    width: 100%;
+    height: 30px;
+    border: hidden;
+  }
+  .main-inicio .contenedor-formulario .form form .inputs-select-radio {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .main-inicio .contenedor-formulario .form form .inputs-select-radio select {
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    border: hidden;
+    font-weight: bold;
+    color: #585758;
+  }
+  .main-inicio .contenedor-formulario .form form .button {
+    margin: 5px auto;
+    display: flex;
+    width: 100%;
+  }
+  .main-inicio .contenedor-formulario .form form .button button {
+    background-color: #018bb9;
+    border: 2px solid #018bb9;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    width: 60%;
   }
   .main-inicio .contenedor-formulario .info-formulario {
     width: 100%;
@@ -639,22 +800,124 @@ header .container-header1 .logos li a i:hover {
     margin: 0px auto;
   }
   .main-inicio .contenedor-nosotras .licenciada {
-    width: 80%;
-    margin-top: 200px;
+    width: 90%;
+    margin-top: 100px;
     margin-bottom: 50px;
+    padding: 5px;
   }
   .main-inicio .contenedor-nosotras .licenciada .foto {
     width: 80%;
-    height: 300px;
-    margin: -140px auto;
+    height: 70%;
+    margin: -80px auto;
+    padding: 15px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .main-inicio .contenedor-nosotras .licenciada .foto img {
-    width: 180px;
-    height: 180px;
-    border-radius: 100px;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
   }
   .main-inicio .contenedor-nosotras .licenciada .textos {
     margin-top: 100px;
+    width: 100%;
+  }
+  .main-inicio .contenedor-nosotras .licenciada .textos h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .main-inicio .contenedor-nosotras .licenciada .textos p {
+    font-size: 15px;
+  }
+  .main-inicio .contenedor-data {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 5px;
+    flex-direction: row;
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    padding: 15px;
+    z-index: 4;
+  }
+  .main-inicio .contenedor-data .wave2 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+  }
+  .main-inicio .contenedor-data .wave2 .ubicacion {
+    z-index: 3;
+    width: 100%;
+    color: #ffffff;
+    margin: auto;
+    padding: 15px;
+    font-weight: bold;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .main-inicio .contenedor-data .wave2 .ubicacion .direccion,
+.main-inicio .contenedor-data .wave2 .ubicacion .colectivos {
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-inicio .contenedor-data .wave2 .ubicacion .direccion h4,
+.main-inicio .contenedor-data .wave2 .ubicacion .colectivos h4 {
+    width: 100%;
+    height: 50px;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .main-inicio .contenedor-data .wave2 .ubicacion .direccion h2,
+.main-inicio .contenedor-data .wave2 .ubicacion .colectivos h2 {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+  }
+  .main-inicio .contenedor-data .wave2 .ubicacion .direccion h2 i,
+.main-inicio .contenedor-data .wave2 .ubicacion .colectivos h2 i {
+    color: aliceblue;
+    margin: 5px;
+  }
+  .main-inicio .contenedor-data .wave2 .mapa {
+    z-index: 1;
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .main-inicio .contenedor-data .wave2 .mapa button {
+    width: 50%;
+    height: 50px;
+    background-color: #070707;
+    border: hidden;
+    border-radius: 100px;
+  }
+  .main-inicio .contenedor-data .wave2 .mapa button a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .main-inicio .contenedor-data .wave2 .mapa button:hover {
+    background-color: #585758;
   }
   .main-inicio .contenedor-formulario {
     width: 100%;
